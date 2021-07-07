@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="myPortfolio.css">
+</head>
+<body>
+    <div class="min">
+        <img src="NicePng_s-png_3542975.png" alt="">
+        <div class="menu">
+            <img src="menu.png" id="menu" >
+        </div>
+    </div>
+
+    <!-- toggle nave section -->
+    
+    <nav id="nav">
+        <ul>
+            <li><a href="#sa">Home</a></li>
+            <li><a href="#q">Image</a></li>
+            <li><a href="#ff">About</a></li>
+            <li><a href="#f">skill</a></li>
+        </ul>
+        <div id="lev">X</div>
+    </nav>
+        <!-- nav section end -->
+
+    <div class="bg">
+        <img src="aaa.jpg" alt="" id="sa">
+        <div class="text">
+            <h1>I'am ADNAN SAMI</h1>
+            <p>Iam a student who lives in ramghar. all of my friend are live too.now iam larning wabesite devolop. i love this .and also my laptop. </p>
+            <br>
+            <p id="p">while many people have dreams of becoming doctor and lawyers, i have always wanted to be a programer.</p>
+            <button id="button">Read More.</button>
+        </div>
+    </div>
+
+
+    <div class="text2">
+        <h1>I'am ADNAN SAMI</h1>
+        <p id="san">Iam a student who lives in ramghar. all of my friend are live too.now iam larning wabesite devolop.My parents have always supported my dreams and aspirations. According to them, the only way to achieve all your goals is to work very hard and never give up on them. They have never imposed .....</p>
+        <br>
+        <button id="butt">Read More.</button>
+    </div>
+    <div class="myBio" id="bio">
+        <h1 id="x">X</h1>
+        <p id="fq">Iam a student who lives in ramghar. all of my friend are live too.now iam larning wabesite devolop. i love this .and also my laptop. My parents have always supported my dreams and aspirations. According to them, the only way to achieve all your goals is to work very hard and never give up on them. They have never imposed themselves and demanded that any of their children become what they want us. Instead, they wanted my siblings and me to choose careers and a life that will give us joy and stability.
+        </p>
+    </div>
+    
+    <!-- img section -->
+
+    <div class="img-dection" id="q">
+        <div class="t">
+           <h1>My Images Gallary</h1>
+           <br>
+           <hr id="hr">
+        </div>
+        <img src="my2.jpg" alt="" onclick="inu('my2.jpg')">
+        <img src="myimg.jpg" alt="" onclick="inu('myimg.jpg')">
+        <img src="aaa.jpg" alt="" onclick="inu('aaa.jpg')">
+        <img src="myi.jpg" alt="" onclick="inu('myi.jpg')">
+        <hr>
+    </div>
+    <div class="imSo" id="imSo">
+        <h2 id="w">X</h2>
+        <img src="my2.jpg" alt="" id="bb">
+    </div>
+
+    <!-- about section  -->
+
+    <div class="about">
+        <div class="ii">
+            <img src="my2.jpg" alt="">
+        </div>
+        <h1 id="ff">About Me</h1>
+        <br>
+        <div class="tt">
+            <p>I am 17 years old and studying  at Bellchari High School. I am a self-driven and a self-motivated student. Once my father said to me that “Education is the most powerful weapon, one can conquer all hurdles of life using knowledge”.</p>
+            <br>
+            <p id="go">My parents used to motivate and encourage me to study but I never understood their cry for my bright future. As it is said that time is the healer and it teaches lessons which none can teach.</p>
+        </div>
+    </div>
+
+    <!-- skill -->
+
+    <div class="skill">
+        <h1 id="f">My Skill</h1>
+        
+        <img src="f2Ans.jpg" alt="">
+    </div>
+<footer>
+    <h2>Around The Wabe</h2>
+    <div class="m">
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">instagraam</a></li>
+            <li><a href="#">youtube</a></li>
+        </ul>
+    </div>
+
+    <div class="lo">
+        <h1>LOCATION</h1>
+        <br>
+         <p>Asia,Bangladesh</p>
+    </div>
+    <div class="aa">
+        <h1>About</h1>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, voluptatem facere fugit,</p>
+    </div>
+</footer> >
+<a href="#"><img src="facebook.png" alt="" id="facebook"></a>
+<div class="fut" id="y">
+    <!-- <img src="images (1)-01.jpeg" alt=""> -->
+    <h5>Location</h5>
+    <h5>contuct</h5>
+    <h5>powerby</h5>    
+    <div>
+    <h6>Bangladesh</h6>
+    <h6>adnansami@gmil.com</h6>
+    <h6>#AdNan.S</h6>
+    </div>
+    <!-- <img src="facebook.png" alt=""> -->
+</div>
+
+
+
+
+
+
+
+
+<script>
+        let menu=document.getElementById('menu');
+        let close=document.getElementById('lev');
+        let nav=document.getElementById('nav');
+        menu.onclick=function(){
+            nav.style.visibility="visible";
+        }
+        close.onclick=function(){
+            nav.style.visibility="hidden";
+        }
+
+        // next sectiom
+        let bnt=document.getElementById('butt');
+        let sho=document.getElementById('bio');
+        let x=document.getElementById('x');
+        bnt.onclick=function(){
+            sho.style.visibility="visible";
+        }
+        x.onclick=function(){
+            sho.style.visibility="hidden";
+        }
+        // min text section
+        let o=document.getElementById('button');
+        let a=document.getElementById('bio');
+        o.onclick=function(){
+            a.style.visibility="visible";
+        }
+        ///img
+        let s=document.getElementById('bb');
+        let im=document.getElementById('imSo')
+        let t=document.getElementById('w')
+        function inu(x){
+            im.style.visibility="visible";
+            s.src=x;
+        }
+        t.onclick=function(){
+            im.style.visibility="hidden";
+
+        }
+
+
+</script>
+</body>
+</html>
